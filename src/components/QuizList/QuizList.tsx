@@ -23,9 +23,7 @@ const QuizList: React.FC<QuizListProps> = ({
         onChange={(e) => setSearchQuery(e.target.value)}
       />
 
-      {/* Grid layout for displaying quizzes */}
       <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-        {/* Render quizzes */}
         {filteredQuizzes.map((quiz) => (
           <div key={quiz.id} className="bg-white rounded-lg shadow-lg">
             <div className="p-4">
